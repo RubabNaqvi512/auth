@@ -9,7 +9,7 @@ import PrivateRoute from './components/PrivateRoute.js';  // Added .js
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
